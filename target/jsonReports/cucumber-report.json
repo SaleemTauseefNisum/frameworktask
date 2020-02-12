@@ -1,0 +1,133 @@
+[
+  {
+    "comments": [
+      {
+        "line": 1,
+        "value": "# new feature"
+      },
+      {
+        "line": 2,
+        "value": "# Tags: optional"
+      }
+    ],
+    "line": 5,
+    "elements": [
+      {
+        "comments": [
+          {
+            "line": 18,
+            "value": "#     |User2 |  2000  |31 |"
+          }
+        ],
+        "before": [
+          {
+            "result": {
+              "duration": 5165857400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeScenario()"
+            }
+          }
+        ],
+        "line": 21,
+        "name": "Verify if Delete Place functionality is working",
+        "description": "",
+        "id": "validate-dummy-rest-api;verify-if-delete-place-functionality-is-working",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 121088300,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "DeletePlace Payload",
+            "match": {
+              "location": "Stepdefinitions.deleteplacePayload()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1490650100,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "User calls \"deletePlaceAPI\" with \"POST\" http request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "deletePlaceAPI",
+                  "offset": 12
+                },
+                {
+                  "val": "POST",
+                  "offset": 34
+                }
+              ],
+              "location": "Stepdefinitions.userCallSomethingWithSomethingHttpRequest(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 505700,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "Api call got \"success\" with \"200\" response",
+            "match": {
+              "arguments": [
+                {
+                  "val": "success",
+                  "offset": 14
+                },
+                {
+                  "val": "200",
+                  "offset": 29
+                }
+              ],
+              "location": "Stepdefinitions.apiCallIsSuccessWith200Response(String,String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 23035200,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "\"status\" in response body is \"OK\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "status",
+                  "offset": 1
+                },
+                {
+                  "val": "OK",
+                  "offset": 30
+                }
+              ],
+              "location": "Stepdefinitions.inResponseBodyIs(String,String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 20,
+            "name": "@DeletePlace"
+          }
+        ]
+      }
+    ],
+    "name": "Validate dummy rest Api",
+    "description": "",
+    "id": "validate-dummy-rest-api",
+    "keyword": "Feature",
+    "uri": "employeeVerification.feature"
+  }
+]

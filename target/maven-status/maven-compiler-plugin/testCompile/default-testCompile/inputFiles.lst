@@ -1,8 +1,11 @@
 C:\Users\stauseef\IdeaProjects\ApiFrameworkTask\src\test\java\runner\TestRunner.java
-C:\Users\stauseef\IdeaProjects\ApiFrameworkTask\src\test\java\runner\Test.java
-C:\Users\stauseef\IdeaProjects\ApiFrameworkTask\src\test\java\stepDefinitions\Stepdefinitions.java
+C:\Users\stauseef\IdeaProjects\ApiFrameworkTask\src\test\java\definitions\Stepdefinitions.java
+C:\Users\stauseef\IdeaProjects\ApiFrameworkTask\src\test\java\resources\APIResources.java
+C:\Users\stauseef\IdeaProjects\ApiFrameworkTask\src\test\java\resources\DummyApiTestDataBuild.java
 C:\Users\stauseef\IdeaProjects\ApiFrameworkTask\src\test\java\GetRequest.java
 C:\Users\stauseef\IdeaProjects\ApiFrameworkTask\src\test\java\resources\TestDataBuild.java
 C:\Users\stauseef\IdeaProjects\ApiFrameworkTask\src\test\java\AddAndDeleteEmployee.java
+C:\Users\stauseef\IdeaProjects\ApiFrameworkTask\src\test\java\resources\DummyApiApiResources.java
 C:\Users\stauseef\IdeaProjects\ApiFrameworkTask\src\test\java\resources\Utilities.java
+C:\Users\stauseef\IdeaProjects\ApiFrameworkTask\src\test\java\definitions\Hooks.java
 C:\Users\stauseef\IdeaProjects\ApiFrameworkTask\src\test\java\PutRequest.java

@@ -17,7 +17,7 @@ public void beforeScenario() throws IOException
     {
 
         m.appEmployeePayloadWith("user1", "French", "Asia");
-        m.userCallSomethingWithSomethingHttpRequest("AddPlaceAPI", "POST");
+        m.userCallSomethingWithSomethingHttpRequest("addPlaceAPI", "POST");
         m.verifyPlaceIdCreatedMapsToUsing("user1", "getPlaceAPI");
     }
 
