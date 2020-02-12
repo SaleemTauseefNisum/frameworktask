@@ -31,7 +31,8 @@ public class Utilities {
 
     public static String getGlobalValues(String key) throws IOException {
         Properties propOjb = new Properties();
-        FileInputStream fIS = new FileInputStream("C:\\Users\\stauseef\\IdeaProjects\\ApiFrameworkTask\\src\\test\\resources\\global.properties");
+        String dir =System.getProperty("user.dir");
+        FileInputStream fIS = new FileInputStream(dir + "\\src\\test\\resources\\global.properties");
         propOjb.load(fIS);
         return propOjb.getProperty(key);
 
