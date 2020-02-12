@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="66dc19cd-1888-4f54-bf31-953d73910ccd" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ApiFrameworkTask.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logging.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pojo/AddEmployee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pojo/AddPlace.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pojo/Data.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pojo/Location.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/AddAndDeleteEmployee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/GetRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/PutRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/definitions/Hooks.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/definitions/Stepdefinitions.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/resources/APIResources.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/resources/DummyApiApiResources.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/resources/DummyApiTestDataBuild.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/resources/TestDataBuild.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/resources/Utilities.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/runner/TestRunner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/features/Test.features" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/features/employeeVerification.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/global.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ApiFrameworkTask-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/pojo/AddEmployee.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/pojo/AddPlace.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/pojo/Data.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/pojo/Location.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/jsonReports/cucumber-report.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-runner.TestRunner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/surefire-reports/runner.TestRunner.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/AddAndDeleteEmployee.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/GetRequest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/META-INF/ApiFrameworkTask.kotlin_module" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/PutRequest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/definitions/Hooks.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/definitions/Stepdefinitions.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/features/Test.features" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/features/employeeVerification.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/global.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/resources/APIResources.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/resources/DummyApiApiResources.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/resources/DummyApiTestDataBuild.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/resources/TestDataBuild.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/resources/Utilities.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/runner/TestRunner.class" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageViewManager">
+    <option name="myElementSize" value="58" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Substep Feature" />
+        <option value="Enum" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1XZLDaXKDDvJJR14Vyol0DdDcPJ" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="stepDefinitions" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\stauseef\IdeaProjects\ApiFrameworkTask\src\test\java\resources" />
+      <recent name="C:\Users\stauseef\IdeaProjects\ApiFrameworkTask\src\main\java\pojo" />
+      <recent name="C:\Users\stauseef\IdeaProjects\ApiFrameworkTask\src\test\java" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\stauseef\IdeaProjects\ApiFrameworkTask\src\test\java\resources" />
+      <recent name="C:\Users\stauseef\IdeaProjects\ApiFrameworkTask\src\test\resources" />
+      <recent name="C:\Users\stauseef\IdeaProjects\ApiFrameworkTask\src\test" />
+      <recent name="C:\Users\stauseef\IdeaProjects\ApiFrameworkTask\src\test\java" />
+      <recent name="C:\Users\stauseef\IdeaProjects\ApiFrameworkTask\src\test\java\features" />
+    </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn install" />
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.TestRunner (1)">
+    <configuration name="GetRequest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="GetRequest" />
+      <module name="ApiFrameworkTask" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scenario: Validate new Employee is being successfully added (1)" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="1.2" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/GetRequest.feature" />
+      <option name="GLUE" value="definitions" />
+      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
+      <module name="ApiFrameworkTask" />
+      <option name="NAME_FILTER" value="^Validate new Employee is being successfully added$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome --name &quot;^Validate new Employee is being successfully added$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Validate new Employee is being successfully added" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cucumber.api.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AddAndDeleteEmployee" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ApiFrameworkTask" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="AddAndDeleteEmployee" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestRunner (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ApiFrameworkTask" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="runner.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="runner" />
+      <option name="MAIN_CLASS_NAME" value="runner.TestRunner" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestRunner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ApiFrameworkTask" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cucumberAutomations.stepDefinitions" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="stepDefinitions" />
+      <option name="MAIN_CLASS_NAME" value="stepDefinitions.TestRunner" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.TestRunner (1)" />
+        <item itemvalue="Application.GetRequest" />
+        <item itemvalue="JUnit.AddAndDeleteEmployee" />
+        <item itemvalue="Cucumber java.Scenario: Validate new Employee is being successfully added (1)" />
+        <item itemvalue="JUnit.TestRunner" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="66dc19cd-1888-4f54-bf31-953d73910ccd" name="Default Changelist" comment="" />
+      <created>1581248550523</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1581248550523</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="275" y="23" key="#Inspections" timestamp="1581431406028">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="275" y="23" key="#Inspections/0.0.1366.728@0.0.1366.728" timestamp="1581431406028" />
+    <state x="275" y="23" key="#Project_Structure" timestamp="1581272166557">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="275" y="23" key="#Project_Structure/0.0.1366.728@0.0.1366.728" timestamp="1581272166557" />
+    <state x="413" y="120" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1581340523991">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="413" y="120" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1581340523991" />
+    <state x="137" y="20" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1581340995426">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="137" y="20" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1581340995426" />
+    <state x="92" y="92" width="1182" height="544" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1581432823559">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="92" y="92" width="1182" height="544" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1366.728@0.0.1366.728" timestamp="1581432823559" />
+    <state x="435" y="168" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1581331235916">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="435" y="168" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728@0.0.1366.728" timestamp="1581331235916" />
+    <state x="488" y="81" key="#com.intellij.ide.util.MemberChooser" timestamp="1581325441196">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="488" y="81" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1581325441196" />
+    <state x="479" y="224" width="408" height="288" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1581271474384">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="479" y="224" width="408" height="288" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1366.728@0.0.1366.728" timestamp="1581271474384" />
+    <state x="413" y="112" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1581266399611">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="413" y="112" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1581266399611" />
+    <state width="420" height="466" key="DebuggerActiveHint" timestamp="1581417458336">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="420" height="466" key="DebuggerActiveHint/0.0.1366.728@0.0.1366.728" timestamp="1581417458336" />
+    <state x="463" y="120" key="FileChooserDialogImpl" timestamp="1581335461206">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="463" y="120" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1581335461206" />
+    <state width="1323" height="248" key="GridCell.Tab.0.bottom" timestamp="1581494412368">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="248" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1581494412368" />
+    <state width="1323" height="248" key="GridCell.Tab.0.center" timestamp="1581494412368">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="248" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1581494412368" />
+    <state width="1323" height="248" key="GridCell.Tab.0.left" timestamp="1581494412368">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="248" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1581494412368" />
+    <state width="1323" height="248" key="GridCell.Tab.0.right" timestamp="1581494412368">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="248" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1581494412368" />
+    <state width="1323" height="248" key="GridCell.Tab.1.bottom" timestamp="1581494412368">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="248" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1581494412368" />
+    <state width="1323" height="248" key="GridCell.Tab.1.center" timestamp="1581494412368">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="248" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1581494412368" />
+    <state width="1323" height="248" key="GridCell.Tab.1.left" timestamp="1581494412368">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="248" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1581494412368" />
+    <state width="1323" height="248" key="GridCell.Tab.1.right" timestamp="1581494412368">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="248" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1581494412368" />
+    <state x="213" y="20" key="Maven.ArtifactSearchDialog" timestamp="1581430216820">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="213" y="20" key="Maven.ArtifactSearchDialog/0.0.1366.728@0.0.1366.728" timestamp="1581430216820" />
+    <state x="184" y="0" key="SettingsEditor" timestamp="1581340865592">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="184" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1581340865592" />
+    <state x="379" y="96" width="607" height="536" key="find.popup" timestamp="1581270174792">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="379" y="96" width="607" height="536" key="find.popup/0.0.1366.728@0.0.1366.728" timestamp="1581270174792" />
+    <state x="435" y="286" key="org.jetbrains.plugins.cucumber.inspections.ui.CreateStepDefinitionFileDialog" timestamp="1581320719944">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="435" y="286" key="org.jetbrains.plugins.cucumber.inspections.ui.CreateStepDefinitionFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1581320719944" />
+    <state x="339" y="162" width="672" height="677" key="run.anything.popup" timestamp="1581340941455">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="339" y="162" width="672" height="677" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1581340941455" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1581344267306">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1581344267306" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/runner/TestRunner.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/definitions/Stepdefinitions.java</url>
+          <line>84</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/resources/Utilities.java</url>
+          <line>40</line>
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/definitions/Stepdefinitions.java</url>
+          <line>43</line>
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/definitions/Hooks.java</url>
+          <line>18</line>
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/ApiFrameworkTask$TestRunner.ic" NAME="TestRunner Coverage Results" MODIFIED="1581269852693" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>cucumberAutomations.*</FILTER>
+    </SUITE>
+  </component>
+</project>
