@@ -31,11 +31,10 @@ public class Utilities {
 
     public static String getGlobalValues(String key) throws IOException {
         Properties propOjb = new Properties();
-        String dir =System.getProperty("user.dir");
-        FileInputStream fIS = new FileInputStream(dir + "\\src\\test\\resources\\global.properties");
+        String dirPath =System.getProperty("user.dir");
+        FileInputStream fIS = new FileInputStream(dirPath + "\\src\\test\\resources\\global.properties");
         propOjb.load(fIS);
         return propOjb.getProperty(key);
-
     }
 
     public String getJsonPath(Response response, String key){
