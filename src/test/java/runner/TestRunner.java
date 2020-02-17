@@ -5,10 +5,10 @@ import cucumber.api.junit.Cucumber;
 import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features = {"src/test/resources/features/"},
+@CucumberOptions(features = {"src/test/resources/features/NisumTask.features"},
         plugin ="json:target/jsonReports/cucumber-report.json",
         glue = {"definitions"}
-        ,tags = {"@DeletePlace"}
+       // ,tags = {"@DeletePlace"}
         )
 
 public class TestRunner {

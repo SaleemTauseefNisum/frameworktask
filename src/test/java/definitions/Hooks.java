@@ -1,30 +1,13 @@
 package definitions;
 
-import cucumber.api.java.Before;
-
-
-import java.io.IOException;
-
+import cucumber.api.java.After;
 
 public class Hooks {
-@Before("@DeletePlace")
-public void beforeScenario() throws IOException
-{		//execute this code only when place id is null
-    //write a code that will give you place id
+    @After()
+    public void afterScenario(){
+        Stepdefinitions sF = new Stepdefinitions();
+        sF.driver.quit();
 
-    Stepdefinitions m =new Stepdefinitions();
-    if(Stepdefinitions.place_id==null)
-    {
-
-        m.appEmployeePayloadWith("user1", "French", "Asia");
-        m.userCallSomethingWithSomethingHttpRequest("addPlaceAPI", "POST");
-        m.verifyPlaceIdCreatedMapsToUsing("user1", "getPlaceAPI");
     }
 
-
-
 }
-
-
-}
-

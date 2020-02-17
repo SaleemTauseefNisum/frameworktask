@@ -1,7 +1,0 @@
-# new feature
-# Tags: optional
-@Test
-Feature: Test feature file
-
-  Scenario: Feature file
-    Given app test user

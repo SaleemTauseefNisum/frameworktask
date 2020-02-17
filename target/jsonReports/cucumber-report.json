@@ -10,124 +10,140 @@
         "value": "# Tags: optional"
       }
     ],
-    "line": 5,
+    "line": 3,
     "elements": [
       {
-        "comments": [
-          {
-            "line": 18,
-            "value": "#     |User2 |  2000  |31 |"
-          }
-        ],
-        "before": [
+        "line": 5,
+        "name": "Verify Karachi office address is same on nisum site and google",
+        "description": "",
+        "id": "test-feature-file;verify-karachi-office-address-is-same-on-nisum-site-and-google",
+        "after": [
           {
             "result": {
-              "duration": 4639229300,
+              "duration": 18081416800,
               "status": "passed"
             },
             "match": {
-              "location": "Hooks.beforeScenario()"
+              "location": "Hooks.afterScenario()"
             }
           }
         ],
-        "line": 21,
-        "name": "Verify if Delete Place functionality is working",
-        "description": "",
-        "id": "validate-dummy-rest-api;verify-if-delete-place-functionality-is-working",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 139817000,
+              "duration": 52588317900,
               "status": "passed"
             },
-            "line": 23,
-            "name": "DeletePlace Payload",
+            "line": 6,
+            "name": "Go to nisum\u0027s website",
             "match": {
-              "location": "Stepdefinitions.deleteplacePayload()"
+              "location": "Stepdefinitions.goToNisumSWebsite()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 1364682300,
+              "duration": 641221500,
               "status": "passed"
             },
-            "line": 24,
-            "name": "User calls \"deletePlaceAPI\" with \"POST\" http request",
+            "line": 7,
+            "name": "Select \"PAKISTAN\" From Our offices seciton",
             "match": {
               "arguments": [
                 {
-                  "val": "deletePlaceAPI",
-                  "offset": 12
-                },
-                {
-                  "val": "POST",
-                  "offset": 34
+                  "val": "PAKISTAN",
+                  "offset": 8
                 }
               ],
-              "location": "Stepdefinitions.userCallSomethingWithSomethingHttpRequest(String,String)"
+              "location": "Stepdefinitions.selectFromOurOfficesSeciton(String)"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 146100,
+              "duration": 52300,
               "status": "passed"
             },
-            "line": 25,
-            "name": "Api call got \"success\" with \"200\" response",
+            "line": 8,
+            "name": "Save \"Karachi\" office address",
             "match": {
               "arguments": [
                 {
-                  "val": "success",
-                  "offset": 14
-                },
-                {
-                  "val": "200",
-                  "offset": 29
+                  "val": "Karachi",
+                  "offset": 6
                 }
               ],
-              "location": "Stepdefinitions.apiCallIsSuccessWith200Response(String,String)"
+              "location": "Stepdefinitions.saveOfficeAddress(String)"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 6536400,
+              "duration": 1858414700,
               "status": "passed"
             },
-            "line": 26,
-            "name": "\"status\" in response body is \"OK\"",
+            "line": 9,
+            "name": "Go to \"https://www.google.com\" and Type \"Nisum Pakistan\"",
             "match": {
               "arguments": [
                 {
-                  "val": "status",
-                  "offset": 1
+                  "val": "https://www.google.com",
+                  "offset": 7
                 },
                 {
-                  "val": "OK",
-                  "offset": 30
+                  "val": "Nisum Pakistan",
+                  "offset": 41
                 }
               ],
-              "location": "Stepdefinitions.inResponseBodyIs(String,String)"
+              "location": "Stepdefinitions.goToAndType(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 608799600,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Web page loads",
+            "match": {
+              "location": "Stepdefinitions.webPageLoads()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 31748100,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "pick Nisum Address",
+            "match": {
+              "location": "Stepdefinitions.pickNisumAddress()"
             },
             "keyword": "And "
-          }
-        ],
-        "tags": [
+          },
           {
-            "line": 20,
-            "name": "@DeletePlace"
+            "result": {
+              "duration": 1328500,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "Assert both addressess",
+            "match": {
+              "location": "Stepdefinitions.assertBothAddressess()"
+            },
+            "keyword": "And "
           }
         ]
       }
     ],
-    "name": "Validate dummy rest Api",
+    "name": "Test feature file",
     "description": "",
-    "id": "validate-dummy-rest-api",
+    "id": "test-feature-file",
     "keyword": "Feature",
-    "uri": "employeeVerification.feature"
+    "uri": "src/test/resources/features/NisumTask.features"
   }
 ]

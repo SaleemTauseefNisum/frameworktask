@@ -1,0 +1,12 @@
+# new feature
+# Tags: optional
+Feature: Test feature file
+
+  Scenario: Verify Karachi office address is same on nisum site and google
+    Given Go to nisum's website
+    When Select "PAKISTAN" From Our offices seciton
+    Then Save "Karachi" office address
+    When Go to "https://www.google.com" and Type "Nisum Pakistan"
+    Then Web page loads
+    And pick Nisum Address
+    And Assert both addressess

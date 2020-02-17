@@ -1,103 +1,107 @@
 package definitions;
 
+import cucumber.api.PendingException;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
-import io.restassured.builder.ResponseSpecBuilder;
-import io.restassured.http.ContentType;
-import io.restassured.response.Response;
-import io.restassured.specification.RequestSpecification;
-import io.restassured.specification.ResponseSpecification;
-import resources.APIResources;
-import resources.TestDataBuild;
+import dbmanager.DataBaseCon;
+import org.junit.Assert;
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+import org.openqa.selenium.support.ui.WebDriverWait;
 import resources.Utilities;
 
 import java.io.IOException;
-
-import static io.restassured.RestAssured.*;
-import static org.junit.Assert.assertEquals;
+import java.time.Duration;
+import java.util.NoSuchElementException;
+import java.util.concurrent.TimeUnit;
 
 public class Stepdefinitions extends Utilities {
-    RequestSpecification res;
-    ResponseSpecification reqresponse;
-    Response response;
-    TestDataBuild tBD = new TestDataBuild();
-    static String place_id;
+    public static boolean windowMaximize = false;
+    public String baseUrl;
+    public String nisumAddress;
+    public String googleAddress;
+    static WebDriver driver;
 
+    @Given("^Go to nisum's website$")
+    public void goToNisumSWebsite() throws IOException {
+        DataBaseCon db = new DataBaseCon();
+        db.initConnection("jdbc:mysql://db4free.net:3306", "akashdktyagi", "akashdktyagi");
 
-    @Given("^App Employee Payload with \"([^\"]*)\" \"([^\"]*)\" \"([^\"]*)\"$")
-    public void appEmployeePayloadWith(String name, String language, String address) throws IOException {
-
-        reqresponse = new ResponseSpecBuilder().expectStatusCode(200).
-                expectContentType(ContentType.JSON).build();
-
-        res = given().spec(requestSpecifications()).
-                body(tBD.addPlacePayLoad(name,language, address));
-
-        System.out.println("Given Block");
-    }
-
-    @When("^User calls \"([^\"]*)\" with \"([^\"]*)\" http request$")
-    public void userCallSomethingWithSomethingHttpRequest(String resource, String method)  {
-
-        APIResources resourceApi = APIResources.valueOf(resource);
-        System.out.println(resourceApi.getResource());
-
-        reqresponse = new ResponseSpecBuilder().expectStatusCode(200).
-                expectContentType(ContentType.JSON).build();
-
-        if(method.equalsIgnoreCase("POST")){
-            response = res.when().post(resourceApi.getResource());
-        }
-        else if (method.equalsIgnoreCase("GET")){
-            response = res.when().get(resourceApi.getResource());
+        baseUrl = getGlobalValues("baseUrl");
+        String dirPath = System.getProperty("user.dir");
+        System.setProperty("webdriver.gecko.driver", dirPath + "\\src\\test\\java\\drivers\\geckodriver.exe");
+        driver = new FirefoxDriver();
+        WebDriverWait wait = new WebDriverWait(driver, 20);
+        driver.get(baseUrl);
+        if (windowMaximize == false) {
+            driver.manage().window().maximize();
+            windowMaximize = true;
         }
 
- //               then().spec(reqresponse).extract().response();
-        System.out.println("B");
+    }
 
+    @When("^Select \"([^\"]*)\" From Our offices seciton$")
+    public void selectFromOurOfficesSeciton(String country) {
+        // Write code here that turns the phrase above into concrete actions
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("window.scrollBy(0,3500)");
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", driver.findElement(By.id("block-block-6")));
+        WebElement searchCountry = driver.findElement(By.linkText(country));
+        searchCountry.click();
+        WebElement mainDiv = driver.findElement(By.id("pills-pakistan"));
+        nisumAddress = mainDiv.findElement(By.cssSelector("span")).getText();
 
     }
 
-    @Then("^Api call got \"([^\"]*)\" with \"([^\"]*)\" response$")
-    public void apiCallIsSuccessWith200Response(String arg0, String arg1) {
-        assertEquals(response.getStatusCode(), 200);
-        System.out.println("C");
-    }
-
-    @Given("^app test$")
-    public void appTest() {
-        System.out.println("test");
-    }
-
-
-    @And("^\"([^\"]*)\" in response body is \"([^\"]*)\"$")
-    public void inResponseBodyIs(String expectedkey, String expectedvalue) {
-
-        assertEquals(getJsonPath(response,expectedkey), expectedvalue);
+    @Then("^Save \"([^\"]*)\" office address$")
+    public void saveOfficeAddress(String arg0) {
 
     }
 
-    @And("^verify place_Id created maps to \"([^\"]*)\" using \"([^\"]*)\"$")
-    public void verifyPlaceIdCreatedMapsToUsing(String expectedName, String resource) throws IOException {
-        // Prepare request Spec
-        place_id = getJsonPath(response,"place_id");
-        res = given().spec(requestSpecifications()).queryParam("place_id",place_id);
-        userCallSomethingWithSomethingHttpRequest(resource,"GET");
-        String nameFromResponse =getJsonPath(response,"name");
-        assertEquals(nameFromResponse, expectedName);
+    @When("^Go to \"([^\"]*)\" and Type \"([^\"]*)\"$")
+    public void goToAndType(String website, String searchKey) {
+        driver.navigate().to(website);
+        WebElement as = driver.findElement(By.cssSelector("input[name='q']"));
+        as.sendKeys(searchKey);
+        as.submit();
 
     }
 
-    @Given("^DeletePlace Payload$")
-    public void deleteplacePayload() throws IOException {
-    res = given().spec(requestSpecifications()).body(tBD.deletePlacePayload(place_id));
+    @Then("^Web page loads$")
+    public void webPageLoads() {
+        // WebDriverWait  wait = new WebDriverWait(driver,10);
+        /*Wait<WebDriver> wait = new FluentWait<WebDriver>(driver)
+                .withTimeout(10, TimeUnit.SECONDS)
+                .pollingEvery(5, TimeUnit.SECONDS)
+                .ignoring(NoSuchElementException.class);*/
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        WebElement div = driver.findElement(By.className("i4J0ge"));
 
     }
 
-    @Given("Update Employee Payload \"([^\"]*)\"")
-    public void updateEmployeePayload(String employee) {
+    @And("^pick Nisum Address$")
+    public void pickNisumAddress() {
+        WebElement div = driver.findElement(By.className("i4J0ge"));
+        googleAddress = div.findElement(By.cssSelector("span[class='LrzXr']")).getText();
+    }
+
+    @And("^Assert both addressess$")
+    public void assertBothAddressess() {
+        String nisumAddressSubstr = nisumAddress.substring(6, 36);
+        String googleAddressSubstr = googleAddress.substring(11, 41);
+        String replaceChargoogle = googleAddressSubstr.replace("،", ",");
+        Assert.assertEquals(nisumAddressSubstr, replaceChargoogle);
 
     }
 }
+
+
+
+
+
